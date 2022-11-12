@@ -1,0 +1,11 @@
+{
+  "numTerminals": 2,
+  "terminalNames": [
+    "cqlsh-editor",
+    "terminal-2"
+  ],
+  "terminalTags": [
+    "cqlsh",
+    "termTwo"
+  ]
+}

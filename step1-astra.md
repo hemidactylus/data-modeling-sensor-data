@@ -31,32 +31,21 @@
 
 You can reuse the same token in our other scenarios, too.
 
-✅ Setup Astra CLI by providing your application token:
+✅ Run a command implicitly on the first terminal
 ```
-astra setup
-```
-
-✅ List your existing Astra DB databases:
-```
-astra db list
+date
 ```
 
-✅ Create database `data-modeling` and keyspace `sensor_data` if they do not exist:
+✅ Run some command on a second terminal
 ```
-astra db create data-modeling -k sensor_data --if-not-exist --wait
-```
-
-This operation may take a bit longer when creating a new database or resuming an existing hibernated database.
-
-✅ Verify that database `data-modeling` is `ACTIVE` and keyspace `sensor_data` exists:
-```
-astra db get data-modeling
+### termTwo
+whoami
 ```
 
-✅ Start the CQL shell and connect to database `data-modeling` and keyspace `sensor_data`:
+✅ Run another on the first term explicitly
 ```
-clear
-astra db cqlsh data-modeling -k sensor_data
+### cqlsh
+ls -a
 ```
 
 <!-- NAVIGATION -->
