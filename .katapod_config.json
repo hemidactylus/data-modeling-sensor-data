@@ -7,5 +7,17 @@
   "terminalTags": [
     "cqlsh",
     "termTwo"
-  ]
+  ],
+  "startup": {
+    "cqlsh": "./wait.sh",
+    "termTwo": "clear; echo MY PUNY SECOND CONSOLE STARTS UP."
+  },
+  "stepScripts": {
+    "step1-astra": {
+      "cqlsh": "clear; echo WELCOME TO STEP1-ASTRA IN CQLSH CONSOLE :\\)"
+    },
+    "step2": {
+      "termTwo": "clear; echo AND NOW WE ARE ON SECOND STEP AND THIS IS IN SECOND CONSOLE, LOL"
+    }
+  }
 }
